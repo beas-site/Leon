@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $(".p1").hide();
+  });
+});
+
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>Hallo Cora, volgens Margriet doe ik alles wat zij wil.</h2>
+
+<p class="p1">Volgens Margriet verdwijn ik als je op knop drukt, druk maar eens op de knop.</p>
+<p class="p1">Dit verdwijnt ook als je op de knop drukt.</p>
+
+<button id="button1">Druk op deze knop.</button><br><hr>
+
+<button id="button2">Druk ook eens op deze knop.</button>
+
+<p>Volgens Margriet kan zij het beed dat jij ziet manipuleren, probeer maar eens!</p><br>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+</body>
+</html>
