@@ -1,35 +1,69 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#button1").click(function(){
-    $(".p1").hide();
-  });
-});
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leon&#127876&#127877</title>
+        <style>
+            .crocodile {
+                color: red;
+                font-family: Verdana, sans-serif;
+            }
+            #croc-button {
+	        background: green;
+	        border: none;
+	        border-radius: 5px;
+	        padding: 10px;
+	        color: white;
+	        font-size: 16px;
+	        transition-duration: .5s;
+            margin-top: 15px;
+            }
 
-$(document).ready(function(){
-  $("#button2").click(function(){
-    $("div").animate({left: '250px'});
-  });
-});
-</script>
-</head>
-<body>
+        </style>
+    </head>
+    <body>
 
-<h2>Hallo Cora, volgens Margriet doe ik alles wat zij wil.</h2>
+        <h2 id="cuteness">Katten zijn lief!</h2>
 
-<p class="p1">Volgens Margriet verdwijn ik als je op knop drukt, druk maar eens op de knop.</p>
-<p class="p1">Dit verdwijnt ook als je op de knop drukt.</p>
+        <p id="r1">Katten staan ​​algemeen bekend als een van de schattigste dieren.<br>Het gerucht gaat al lang dat ze de hele mensheid onder hypnose hebben gebracht,<br>zodat ze hun doelen van 'gevoerd worden' bereiken en tegelijkertijd kunnen doen wat ze maar willen in onze huizen..</p>
+        
+        <p id="r2">Deze kat toont het bekende "zo-schattige-voer-mij-nu-gezicht":</p>
+        <a href="https://en.wikipedia.org/wiki/Cat_food">
+            <img id="pl1" src="https://www.kasandbox.org/programming-images/animals/cat.png" width="100"></a>
+        
+        <h2 id="activities">Gemeenschappelijke kattenactiviteiten</h2>
+        
+        <p id="r3">Katten vinden het leuk om onschuldige stukjes touw aan te vallen,<br>om je benen te lopen op exact het moment dat je een pannenkoek op het fornuis probeert om te draaien en urenlang te slapen.</p> 
+        <img id ="pl2" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/2006-07-07_katze_mit_angel.jpg" width="100"><br>
+        <button id="croc-button">Leon, Klik hier als je liever een kerstgroet ziet!&#127876&#127877</button><br>
+<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe><br>
+        <p id="r4"></p>
+        <p id="r5"></p>
 
-<button id="button1">Druk op deze knop.</button><br><hr>
 
-<button id="button2">Druk ook eens op deze knop.</button>
-
-<p>Volgens Margriet kan zij het beeld dat jij ziet manipuleren, probeer maar eens!</p><br>
-  <p> Geef je feedback in de what's app groep van de gebakjesclub.</p><br>
-  
-<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+        
+        var crocodilize = function() {
+            // Modifying elements
+ 
+            $("#cuteness").text("Lieve Leon,");
+            $("#cuteness").css("color", "red");
+            $("#r1").html("Bedankt voor je berichtje.");
+            $("#r2").html("Ik wens jou en je naasten een <strong>fijne kerst!</strong>");
+            $("p").css("color", "green");
+            $("#r3").html("Hopelijk heb je je draai kunnen vinden!");
+            $("#activities").remove();
+            $("#pl1").attr("src", "https://www.kerstanimaties.com/kerst_animaties/3006.gif");
+            $("#pl2").hide();
+            $("iframe").attr("src", "https://www.youtube.com/embed/O9sVJHu5tHw?autoplay=1&loop=1");
+            $("#croc-button").hide();
+            $("#r4").html("Liefs,");            
+            $("#r5").html("Margriet");
+            };
+        
+        $("#croc-button").on("click", function() {
+            crocodilize();
+        });
+        
+        </script>
+    </body>
 </html>
