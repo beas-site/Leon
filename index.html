@@ -61,9 +61,14 @@
             };
         
         $("#croc-button").on("click", function() {
-		  alert("Hello! I am an alert box!");
             crocodilize();
         });
+		
+	$(document).ready(function(){
+  $("button").click(function(){
+		  alert("Hello! I am an alert box!");
+  });
+});
         
         </script>
     </body>
